@@ -1,0 +1,139 @@
+.footer { 
+  margin-bottom: 96px;
+}
+
+.container.footer__contaoner {
+  max-width: 1100px;
+}
+
+.site-menu {
+  margin-bottom: 83px;
+}
+
+.site-menu__sections {
+  display: flex;
+  justify-content: space-between;
+  color: #1b1b1b;
+}
+
+.site-menu__col:not(:last-child) {
+  margin-right: 20px;
+}
+
+.site-menu__title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.site-menu-list {
+  color: #737373;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-menu__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-menu__link {
+  display: block;
+  margin-bottom: 16px;
+  &:hover {
+    color: #d82727;
+  }
+}
+
+.site-menu__title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.site-menu__text {
+  margin-bottom: 34px;
+  font-size: 15px;
+}
+
+a.site-menu__text-row {
+  display: block;
+  margin-bottom: 11px;
+}
+
+.extras {
+  display: flex;
+  width: 100%;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.extras__col {
+  flex: 1;
+  min-height: 200px;
+}
+
+.extras__col:not(:last-child) {
+  margin-right: 3%;
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+}
+
+.extras__best {
+  height: 100%;
+  display: block;
+  background-color: #232323;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+    padding: 10% 15%;
+    line-height: 1;
+    letter-spacing: 2.5px;
+}
+
+.extras__col-socials {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 480px) {
+    height: 118px;
+  }
+}
+
+.socials__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 67%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 8%;
+}
+
+.socials__img {
+  width: 41px;
+  height: 38px;
+  &:hover {
+    fill: #d82727;
+  }
+}
+
+
+
+

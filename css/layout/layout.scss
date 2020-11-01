@@ -1,0 +1,27 @@
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  // min-width: 940px + 20px;       // - в адаптиве не нужно
+
+  // прижимаю footer к низу, вне зависимости от контента страницы:
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__content {
+  flex: 1;
+}
+
+.container {
+  max-width: 1288px;    // width: 942px;    - in static layout 
+  width: 95%;
+  margin: 0 auto;
+}
+

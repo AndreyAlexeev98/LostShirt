@@ -1,0 +1,101 @@
+.lookbook__list {
+  margin-top: 145px;
+  display: flex;
+  margin-bottom: 143px; }
+  @media screen and (max-width: 480px) {
+    .lookbook__list {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 80px; } }
+
+.lookbook__item:not(:last-child) {
+  margin-right: 2.2%; }
+  @media screen and (max-width: 480px) {
+    .lookbook__item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 6%; } }
+
+.lookbook__item {
+  flex: 1;
+  min-height: 473px;
+  overflow: hidden;
+  position: relative; }
+  .lookbook__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 176%;
+    width: 60%;
+    top: -17%;
+    left: -18%;
+    background: center center / contain no-repeat; }
+    @media screen and (max-width: 768px) {
+      .lookbook__item::before {
+        height: 100%;
+        width: 60%;
+        top: 0%; } }
+
+.lookbook__item--man::before {
+  background-image: url("../../img/collections/collection_man.png"); }
+
+.lookbook__item--woman::before {
+  background-image: url("../../img/collections/collection_woman.png");
+  top: -31%;
+  width: 80%;
+  left: -25%; }
+  @media screen and (max-width: 768px) {
+    .lookbook__item--woman::before {
+      top: -1%; } }
+
+.lookbook__pic {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 67%; }
+
+.lookbook__link {
+  display: block;
+  padding: 74px 11% 74px 44%;
+  position: relative;
+  height: 100%; }
+  .lookbook__link:hover .btn {
+    background-color: #d82727;
+    color: #fff;
+    transition: color 1s, background-color 1s; }
+
+.lookbook__title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 2%; }
+  @media screen and (max-width: 1150px) {
+    .lookbook__title {
+      font-size: 45px; } }
+  @media screen and (max-width: 768px) {
+    .lookbook__title {
+      font-size: 24px; } }
+  @media screen and (max-width: 480px) {
+    .lookbook__title {
+      font-size: 36px; } }
+
+.lookbook__desc {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 10%; }
+
+.lookbook__btn {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px; }
+  @media screen and (max-width: 768px) {
+    .lookbook__btn {
+      font-size: 16px; } }
+  @media screen and (max-width: 480px) {
+    .lookbook__btn {
+      font-size: 22px; } }
+
+/*# sourceMappingURL=lookbook__list.css.map */

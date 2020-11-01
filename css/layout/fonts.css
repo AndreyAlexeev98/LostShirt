@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap");
+/* через @font-face
+           // ТОЛЬКО WOFF ФОРМАТ, БЕЗ WOFF2 , ПРОВЕРИТЬ!!!!!!!!!!!!1
+
+  @font-face {
+    font-family: 'YanoneKaffeesatz';
+    src: url('/fonts/Yanone_ONLY_WOFF!!!/YanoneKaffeesatz-Bold.woff') format('woff'); 
+    font-weight: Bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'YanoneKaffeesatz';
+    src: url('/fonts/Yanone_ONLY_WOFF!!!/YanoneKaffeesatz-Regular.woff') format('woff'); 
+    font-weight: 400;  // regular 
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+
+
+  @font-face {
+    font-family: 'Yanone';   // ПРОВЕРИТЬ НА НАЧЕРТАНИЯ БОЛТ ИЛИ РЕГУЛЯР или еще какой , ВОЗМОЖНО НЕ ПРАВИЛЬНОЕ НАЧЕРТАНИЕ 
+    src: url('/fonts/Yanone_Kaffeesatz/yanonekaffeesatz-variablefont_wght-webfont.woff2') format('woff2'),
+        url('/fonts/Yanone_Kaffeesatz/yanonekaffeesatz-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {     
+    font-family: 'Alegreya';  // начертание под вопросом какое правильное        
+    src: url('/fonts/Alegreya_Sans_Sc/alegreyasanssc-black-webfont.woff2') format('woff2'),
+        url('/fonts/Alegreya_Sans_Sc/alegreyasanssc-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto/roboto-bold-webfont.woff2') format('woff2'),
+        url('/fonts/Roboto/roboto-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto/roboto-medium-webfont.woff2') format('woff2'),
+        url('/fonts/Roboto/roboto-medium-webfont.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+        url('/fonts/Roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+*/
+
+/*# sourceMappingURL=fonts.css.map */

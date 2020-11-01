@@ -1,0 +1,102 @@
+.gallery {
+  display: flex;
+  margin-top: 105px;
+  flex-wrap: wrap;
+  margin-left: -28px;
+  margin-bottom: -30px;  
+}
+
+.gallery__elem__wrap {
+  margin-left: 28px; 
+  margin-bottom: 30px;
+  width: 302px;
+  height: 386px;
+  background-color: #ffc92f;
+  position: relative;
+}
+
+
+.gallery__elem {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .gallery__pic {
+    width: 95%;
+  }
+  &:hover {
+    .gallery__hover {
+      opacity: 1;
+      transform: translateY(0);
+      will-change: transform;
+      transition: transform 1s;
+    }
+  }
+}
+
+.gallery__price {
+  color:#fcf5e6;
+  position: absolute;
+  top: 18px;
+  left: -6px;
+  width: 126px;
+  border-bottom: 45px solid #232323;
+  border-left: 5px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotate(-181deg);
+}
+
+.gallery__price__num {
+  display: inline-block;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 1px;
+    right: 24px;
+  transform: rotate(181deg);
+}
+
+ 
+
+.gallery__elem__wrap--black {
+  background-color: #212121;
+  .gallery__price {
+    color: #212121;
+    border-bottom: 45px solid #ffc92f;
+  }
+} 
+.gallery__elem__wrap--big {
+  width: 628px;
+  height: 543px;
+  .gallery__pic {
+    width: 75%;
+  }
+}
+
+.gallery__hover {
+  background-color: rgba(33, 33, 33, .8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 5px solid #ffffff;
+  transform: translateY(100%);
+  transition: opacity 1s, transform 1s;
+  opacity: 0;
+  text-align: center;
+  padding: 5%;
+  height: 40%;
+}
+
+.gallery__hover-title {
+  color: #fcf5e6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+
+

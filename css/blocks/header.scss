@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 29px;  
+}
+
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 7.87%;
+  max-width: 60px;
+  min-width: 47px;
+  background-color: #000;
+  transition: min-width 0.5s;
+  z-index: 10;
+  &--active {
+    // max-width: 325px;
+    min-width: 325px;
+    // width: 23.7%;
+    transition: min-width .5s;
+    .hamburger-menu {
+      margin: 28px 28px auto auto;
+      
+      .hamburger-menu__line:nth-child(1) {
+        transform: rotate(45deg) translateX(26%) translateY(231%);
+      }
+      
+      .hamburger-menu__line:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger-menu__line:nth-child(3) {
+        transform: rotate(-45deg) translateX(26%) translateY(-217%);
+      }
+    }
+    .menu__open {
+      left: 26%;
+      transition: left 0.6s;
+      transition-delay: 0.1s;
+      // margin-top: -17px;
+      position: absolute;
+    }
+  }
+}
+
+.menu__open {
+  text-align: center;
+  // margin-top: -17px;
+  position: absolute;
+  left: -400px;
+  transition: left 0.6s;
+  .menu__list {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase; 
+    margin-top: 150px;
+    .menu__item:not(:last-child) {
+      margin-bottom: 34px;
+      .menu__link {
+        color: #ffc92f;
+        transition: color .3s;
+      }
+      .menu__link:hover {
+        color: #d82727;
+        transition: color .3s;
+      }
+    }
+  }
+}
+

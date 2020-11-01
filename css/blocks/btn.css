@@ -1,0 +1,10 @@
+.btn {
+  padding: 10px 22px;
+  display: inline-block;
+  background-color: #1b1b1b;
+  text-transform: uppercase; }
+
+.btn--yellow {
+  color: #ffc92f; }
+
+/*# sourceMappingURL=btn.css.map */
