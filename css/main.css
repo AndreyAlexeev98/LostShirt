@@ -572,13 +572,13 @@ img, svg {
   background: center center / contain no-repeat; }
 
 .slider___item--thirts {
-  background-image: url(../../img/content/hero/slider_pic_1.png); }
+  background-image: url(../img/content/hero/slider_pic_1.png); }
 
 .slider___item--games {
-  background: url(../../img/content/hero/slider_pic_2.png); }
+  background: url(../img/content/hero/slider_pic_2.png); }
 
 .slider___item--presents {
-  background: url(../../img/content/hero/slider_pic_3.png); }
+  background: url(../img/content/hero/slider_pic_3.png); }
 
 .slider___item--visible {
   opacity: 1;
@@ -868,10 +868,10 @@ img, svg {
         top: 0%; } }
 
 .lookbook__item--man::before {
-  background-image: url("../../img/collections/collection_man.png"); }
+  background-image: url("../img/collections/collection_man.png"); }
 
 .lookbook__item--woman::before {
-  background-image: url("../../img/collections/collection_woman.png");
+  background-image: url("../img/collections/collection_woman.png");
   top: -31%;
   width: 80%;
   left: -25%; }
