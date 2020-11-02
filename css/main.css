@@ -533,6 +533,12 @@ img, svg {
 .logo {
   width: 148px;
   height: 120px; }
+  @media screen and (max-width: 768px) {
+    .logo {
+      margin-left: 3%; } }
+  @media screen and (max-width: 480px) {
+    .logo {
+      width: 104px; } }
 
 .mail {
   text-align: center; }
@@ -570,15 +576,18 @@ img, svg {
   width: 100%;
   height: 100%;
   background: center center / contain no-repeat; }
+  @media screen and (max-width: 480px) {
+    .slider___item {
+      left: 54%; } }
 
 .slider___item--thirts {
   background-image: url(../img/content/hero/slider_pic_1.png); }
 
 .slider___item--games {
-  background: url(../img/content/hero/slider_pic_2.png); }
+  background-image: url(../img/content/hero/slider_pic_2.png); }
 
 .slider___item--presents {
-  background: url(../img/content/hero/slider_pic_3.png); }
+  background-image: url(../img/content/hero/slider_pic_3.png); }
 
 .slider___item--visible {
   opacity: 1;
@@ -596,6 +605,12 @@ img, svg {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 63px;
   text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .slider__text-wrap {
+      font-size: 46px; } }
+  @media screen and (max-width: 480px) {
+    .slider__text-wrap {
+      font-size: 22px; } }
 
 .slider__text {
   background-color: #212121;
@@ -612,6 +627,16 @@ img, svg {
   top: 32.5%;
   left: 0.5%;
   max-width: 380px; }
+  @media screen and (max-width: 768px) {
+    .slider___item--thirts .slider__text-wrap {
+      top: 50.5%;
+      left: 3.5%;
+      max-width: 274px; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .slider___item--thirts .slider__text-wrap {
+      top: 63.5%;
+      left: 6.5%; } }
+
 .slider___item--thirts .slider__text {
   padding: 0 22px; }
   .slider___item--thirts .slider__text:nth-child(2) {
@@ -631,7 +656,29 @@ img, svg {
   bottom: 0;
   transform: translateX(-50%);
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .slider___item--games .slider__text-wrap {
+      bottom: 24%; } }
+@media screen and (max-width: 1100px) {
+  .slider___item--games {
+    width: 90%; } }
+@media screen and (max-width: 480px) {
+  .slider___item--games {
+    left: 56%; } }
+@media screen and (max-width: 1100px) {
+  .slider___item--games .slider__text {
+    font-size: 53px; } }
+@media screen and (max-width: 768px) {
+  .slider___item--games .slider__text {
+    font-size: 32px; } }
+@media screen and (max-width: 768px) {
+  .slider___item--games .slider__text {
+    font-size: 22px; } }
 
+@media screen and (max-width: 1100px) {
+  .slider___item--presents {
+    width: 90%;
+    margin-left: 3%; } }
 .slider___item--presents .slider__text-wrap {
   top: 68.5%;
   left: -0.5%;
@@ -641,12 +688,19 @@ img, svg {
     padding: 1% 5%; }
   .slider___item--presents .slider__text-wrap .slider__text--white {
     font-size: 70px; }
+    @media screen and (max-width: 480px) {
+      .slider___item--presents .slider__text-wrap .slider__text--white {
+        font-size: 41px; } }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 29px; }
+  @media screen and (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      margin-left: 13%; } }
 
 .menu {
   position: absolute;
@@ -729,6 +783,8 @@ img, svg {
 
 .tabs__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -736,7 +792,8 @@ img, svg {
 
 .tabs__item:not(:last-child) {
   margin-right: 27px; }
-.tabs__item--active .tabs__link {
+.tabs__item--active
+.tabs__link {
   background-color: #1b1b1b;
   color: #ffc92f; }
 
@@ -745,21 +802,29 @@ img, svg {
   display: inline-block; }
   .tabs__link:hover {
     color: #d82727; }
+  .tabs__link--active {
+    background-color: #1b1b1b;
+    color: #ffc92f; }
 
 .gallery {
   display: flex;
   margin-top: 105px;
   flex-wrap: wrap;
   margin-left: -28px;
-  margin-bottom: -30px; }
+  margin-bottom: -30px;
+  width: 103%; }
 
 .gallery__elem__wrap {
   margin-left: 28px;
   margin-bottom: 30px;
-  width: 302px;
+  width: 22.76%;
+  min-width: 190px;
   height: 386px;
   background-color: #ffc92f;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    .gallery__elem__wrap {
+      min-width: 304px; } }
 
 .gallery__elem {
   overflow: hidden;
@@ -804,10 +869,17 @@ img, svg {
     border-bottom: 45px solid #ffc92f; }
 
 .gallery__elem__wrap--big {
-  width: 628px;
+  width: 47.33%;
+  min-width: 408px;
   height: 543px; }
+  @media screen and (max-width: 480px) {
+    .gallery__elem__wrap--big {
+      min-width: 304px; } }
   .gallery__elem__wrap--big .gallery__pic {
     width: 75%; }
+    @media screen and (max-width: 480px) {
+      .gallery__elem__wrap--big .gallery__pic {
+        width: 95%; } }
 
 .gallery__hover {
   background-color: rgba(33, 33, 33, 0.8);
@@ -942,6 +1014,14 @@ img, svg {
   display: flex;
   justify-content: space-between;
   color: #1b1b1b; }
+  @media screen and (max-width: 768px) {
+    .site-menu__sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; } }
+  @media screen and (max-width: 768px) {
+    .site-menu__sections {
+      justify-content: space-between; } }
 
 .site-menu__col:not(:last-child) {
   margin-right: 20px; }
@@ -1000,7 +1080,7 @@ a.site-menu__text-row {
   @media screen and (max-width: 480px) {
     .extras__col:not(:last-child) {
       margin-right: 0;
-      margin-bottom: 5%; } }
+      margin-bottom: 1%; } }
 
 .extras__best {
   height: 100%;
@@ -1088,6 +1168,11 @@ a.site-menu__text-row {
   width: 100%;
   margin-top: 6%;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .product {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .product__photo {
   background-color: #ffc92f;
@@ -1095,10 +1180,23 @@ a.site-menu__text-row {
   justify-content: center;
   align-items: center;
   width: 48%; }
+  @media screen and (max-width: 768px) {
+    .product__photo {
+      width: 100%; } }
+
+.product__img {
+  margin-left: 5%; }
 
 .product__info {
   border: 10px solid #ffc92f;
   width: 52%; }
+  @media screen and (max-width: 768px) {
+    .product__info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; } }
 
 .product__head {
   border-bottom: 1px solid #e0d9c8;
@@ -1140,6 +1238,10 @@ a.site-menu__text-row {
 
 .product__footer {
   padding: 37px 37px 35px 28px; }
+  @media screen and (max-width: 768px) {
+    .product__footer {
+      display: flex;
+      flex-direction: column; } }
 
 .product__size__list {
   display: flex;
@@ -1156,25 +1258,30 @@ a.site-menu__text-row {
   margin-right: 2.2%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  color: #cac3b3; }
   .product__size__item:hover {
-    background-color: #ffc92f;
-    cursor: pointer; }
-  .product__size__item--disactive {
-    color: #cac3b3; }
-    .product__size__item--disactive:hover {
-      cursor: default;
-      background-color: inherit; }
+    cursor: default;
+    background-color: inherit; }
+  .product__size__item--active {
+    color: #1b1b1b; }
+    .product__size__item--active:hover {
+      cursor: pointer;
+      background-color: #ffc92f; }
 
 .product__size__item:last-child {
   margin-right: 0; }
 
-.product__size__item--active {
+.product__size__item--choice {
   background-color: #ffc92f; }
 
 .product__color__list {
   display: flex;
   margin-bottom: 37px; }
+  @media screen and (max-width: 768px) {
+    .product__color__list {
+      display: flex;
+      justify-content: space-evenly; } }
 
 .product__color__item {
   width: 24px;
@@ -1182,7 +1289,8 @@ a.site-menu__text-row {
   border-radius: 50%;
   margin-right: 4.5%;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  flex-shrink: 0; }
   .product__color__item.black {
     background-color: #2f2b25; }
   .product__color__item.white {
@@ -1194,6 +1302,9 @@ a.site-menu__text-row {
     background-color: #38488d; }
   .product__color__item.red {
     background-color: #d72727; }
+  @media screen and (max-width: 768px) {
+    .product__color__item {
+      margin-right: 12.5%; } }
 
 .product__color__item::before {
   content: '';

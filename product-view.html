@@ -38,7 +38,7 @@
         <div class="container">
           <div class="product">
             <div class="product__photo">
-              <img src="./img/tshirts/tshirt_07.png" alt="black t-shirt" class="product__img">
+              <img src="./img/tshirts/tshirt_09.png" alt="black t-shirt" class="product__img">
             </div>
             <div class="product__info">
               <div class="product__head">
@@ -56,14 +56,14 @@
               </ul>
               <div class="product__footer">
                 <ul class="product__size__list">
-                  <li class="product__size__item product__size__item--disactive"><span class="product__size__val ">xxs</span></li>
-                  <li class="product__size__item product__size__item--disactive"><span class="product__size__val ">xs</span></li>
-                  <li class="product__size__item"><span class="product__size__val">s</span></li>
-                  <li class="product__size__item"><span class="product__size__val">m</span></li>
-                  <li class="product__size__item product__size__item--active"><span class="product__size__val">l</span></li>
-                  <li class="product__size__item"><span class="product__size__val">xl</span></li>
-                  <li class="product__size__item"><span class="product__size__val">2xl</span></li>
-                  <li class="product__size__item product__size__item--disactive"><span class="product__size__val ">3xl</span></li>
+                  <li class="product__size__item"><span class="product__size__val ">xxs</span></li>
+                  <li class="product__size__item"><span class="product__size__val ">xs</span></li>
+                  <li class="product__size__item product__size__item--active"><span class="product__size__val">s</span></li>
+                  <li class="product__size__item product__size__item--active"><span class="product__size__val">m</span></li>
+                  <li class="product__size__item product__size__item--active product__size__item--choice"><span class="product__size__val">l</span></li>
+                  <li class="product__size__item product__size__item--active"><span class="product__size__val">xl</span></li>
+                  <li class="product__size__item product__size__item--active"><span class="product__size__val">2xl</span></li>
+                  <li class="product__size__item"><span class="product__size__val ">3xl</span></li>
                 </ul>
                 <ul class="product__color__list">
                   <li class="product__color__item black"></li>
@@ -82,30 +82,30 @@
         <div class="container">
           <div class="tabs">
             <ul class="tabs__list">
-              <li class="tabs__item tabs__item--active">    <!--  in JS on click + tabs__item--active    -->
-                <a href="#" class="tabs__link">
-                  <p>Описание</p>
+              <li class="tabs__item">    <!--  in JS on click + tabs__item--active    -->
+                <a href="#" id="infoDesc" class="tabs__link tabs__link--active">
+                  Описание
                 </a>
               </li>
               <li class="tabs__item">
-                <a href="#" class="tabs__link">
-                  <p>Таблица размеров</p>
+                <a href="#" id="infoTabl" class="tabs__link ">
+                  Таблица размеров
                 </a>
               </li>
               <li class="tabs__item">
-                <a href="#" class="tabs__link">
+                <a href="#" id='infDeliv' class="tabs__link">
                   <p>Условия доставки</p>
                 </a>
               </li>
-              <li class="tabs__item">
-                <a href="#" class="tabs__link">
+              <li class="tabs__item ">
+                <a href="#" id="infBrand" class="tabs__link">
                   <p>О бренде</p>
                 </a>
               </li>
             </ul>
           </div>
           <div class="info__content">
-            <div class="info__desc-wrap info__visible">
+            <div class="info-wrap info__desc-wrap info__visible">
               <ul class="info__list">
                 <li class="info__item">
                   <div class="info__pic">
@@ -156,7 +156,7 @@
                 </p>
               </div>
             </div>
-            <div class="info__tables-wrap">
+            <div class="info-wrap info__tables-wrap">
             <div class="info__left">
               <div class="info__pic-table">
                 <img src="./img/tshirts/tshirt_00.png" alt="tshirt size" class="info__img">
@@ -284,7 +284,7 @@
               </table>
             </div>
             </div>
-            <div class="info__delivery-wrap">
+            <div class="info-wrap info__delivery-wrap">
               <div class="info__list">
                 <div class="info__item">
                   <div class="info__pic">
@@ -304,7 +304,7 @@
                 </p>
               </div>
             </div>
-            <div class="info__brand-wrap">
+            <div class="info-wrap info__brand-wrap">
               <div class="info__list">
                 <div class="info__item">
                   <div class="info__pic">
@@ -417,6 +417,9 @@
     </footer>
   </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-  <script src="./js/info.js"></script>
+  <script src='./js/switchingSize.js'></script>
+  <script src="./js/switchingColors.js"></script>
+  <script src="./js/sectionInfo.js"></script>
+  <script></script>
 </body>
 </html>

@@ -7,6 +7,11 @@
   width: 100%;
   margin-top: 6%;
   display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .product__photo {
@@ -15,11 +20,26 @@
     justify-content: center;
     align-items: center;
     width: 48%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+}
+
+.product__img {
+  margin-left: 5%;  
 }
 
 .product__info {
   border: 10px solid #ffc92f;
   width: 52%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+  
 }
 
 .product__head {
@@ -68,6 +88,11 @@
 
 .product__footer {
   padding: 37px 37px 35px 28px;
+  @media screen and (max-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  }
+  
 }
 
 .product__size__list {
@@ -87,16 +112,17 @@
   display: flex;
   align-items: center;
   justify-content: center; 
+  color: #cac3b3;
   &:hover {
-    background-color: #ffc92f;
-    cursor: pointer;
+    cursor: default;
+    background-color: inherit;
+    
   }
-  &--disactive{
-    color: #cac3b3;
+  &--active{
+    color: #1b1b1b;
     &:hover {
-
-      cursor: default;
-      background-color: inherit;
+      cursor: pointer;
+      background-color: #ffc92f;
     }
   }
 }
@@ -104,13 +130,18 @@
   margin-right: 0;
 }
 
-.product__size__item--active{
+.product__size__item--choice{
   background-color: #ffc92f;
 }
 
 .product__color__list {
   display: flex;
   margin-bottom: 37px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+    
 }
 
 .product__color__item {
@@ -120,6 +151,7 @@
   margin-right: 4.5%;
   position: relative;
   cursor: pointer;
+  flex-shrink: 0;
   &.black {
     background-color: #2f2b25;
   }
@@ -136,12 +168,14 @@
   &.red {
     background-color: #d72727;
   }
+  @media screen and (max-width: 768px) {
+    margin-right: 12.5%;
+  }
 }
   .product__color__item::before{
     content: '';
     width: 35px;
     height: 35px;
-    // display: block;
     display: none;
     background-color: transparent;
     border-radius: 50%;

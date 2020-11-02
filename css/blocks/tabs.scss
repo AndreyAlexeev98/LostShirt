@@ -8,6 +8,8 @@
 
 .tabs__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -18,11 +20,10 @@
   &:not(:last-child) {
     margin-right: 27px;
   }
-  &--active {
-    .tabs__link {
-      background-color: #1b1b1b;
-      color: #ffc92f;
-    }
+  &--active 
+  .tabs__link{
+    background-color: #1b1b1b;
+    color: #ffc92f;
   } 
 }
 
@@ -34,5 +35,9 @@
   &:hover {
     color: #d82727;
   }
+  &--active {
+    background-color: #1b1b1b;
+    color: #ffc92f;
+  } 
 }
 

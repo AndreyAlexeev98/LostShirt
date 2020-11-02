@@ -12,88 +12,88 @@
     <div class="wrapper__content">
       <section class="section hero" id='heroSection' style="background-image: url(./img/bg/hero.jpg);">
         <div class="container hero__container">
-            <header class="header">
+          <header class="header">
+            <a href="./product-view.html" class="logo">
+              <img src="./img/content/logos/logo-main.png" class="logo__img" alt="Lost Shirt logo">
+            </a>
+            <a href="mailto:lostinspace@mail.ru" class="mail">
+              <div class="mail__text">По всем вопросам пишите на:</div>
+              <div class="mail__adresse">lostinspace@mail.ru</div>
+            </a>
+          </header>
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider___item slider___item--thirts slider___item--visible" >
+                <h1 class='slider__text-wrap'>
+                  <div class="slider__text slider__text--white">Три</div>
+                  <div class="slider__text slider__text--white">Футболки</div>
+                  <div class="slider__text slider__text--yellow">По цене</div>
+                  <div class="slider__text slider__text--yellow">Двух</div>
+                </h1>
+              </li>
+              <li class="slider___item slider___item--games ">
+                <h1 class='slider__text-wrap'>
+                  <div class="slider__text slider__text--white">Любимые игры</div>
+                  <div class="slider__text slider__text--yellow">На лучших футболках</div>
+                </h1>
+              </li>
+              <li class="slider___item slider___item--presents ">
+                <h1 class='slider__text-wrap'>
+                  <div class="slider__text slider__text--white">Подарки</div>
+                  <div class="slider__text slider__text--yellow">Для любимых</div>
+                </h1>
+              </li>
+            </ul>
+          </div>
+          <aside class="menu">  <!-- in js - on click + menu--active -->
+            <div class="hamburger-menu">  
+              <span class="hamburger-menu__line"></span>
+              <span class="hamburger-menu__line"></span>
+              <span class="hamburger-menu__line"></span>
+            </div>
+            <div class="menu__open">
               <a href="./product-view.html" class="logo">
                 <img src="./img/content/logos/logo-main.png" class="logo__img" alt="Lost Shirt logo">
               </a>
-              <a href="mailto:lostinspace@mail.ru" class="mail">
-                <div class="mail__text">По всем вопросам пишите на:</div>
-                <div class="mail__adresse">lostinspace@mail.ru</div>
-              </a>
-              <aside class="menu">  <!-- in js - on click + menu--active -->
-                <div class="hamburger-menu">  
-                  <span class="hamburger-menu__line"></span>
-                  <span class="hamburger-menu__line"></span>
-                  <span class="hamburger-menu__line"></span>
-                </div>
-                <div class="menu__open">
-                  <a href="#heroSection" class="logo">
-                    <img src="./img/content/logos/logo-main.png" class="logo__img" alt="Lost Shirt logo">
-                  </a>
-                  <ul class="menu__list">
-                    <li class="menu__item"><a href="#" class="menu__link">Детская коллекция</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Мужская коллекция</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Женская коллекция</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Популярные принты</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Новые принты</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Специальные предложения</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Скоро в продаже</a></li>
-                  </ul>
-                </div>
-              </aside>
-            </header>
-            <div class="slider">
-              <ul class="slider__list">
-                <li class="slider___item slider___item--thirts slider___item--visible" >
-                  <h1 class='slider__text-wrap'>
-                    <div class="slider__text slider__text--white">Три</div>
-                    <div class="slider__text slider__text--white">Футболки</div>
-                    <div class="slider__text slider__text--yellow">По цене</div>
-                    <div class="slider__text slider__text--yellow">Двух</div>
-                  </h1>
-                </li>
-                <li class="slider___item slider___item--games ">
-                  <h1 class='slider__text-wrap'>
-                    <div class="slider__text slider__text--white">Любимые игры</div>
-                    <div class="slider__text slider__text--yellow">На лучших футболках</div>
-                  </h1>
-                </li>
-                <li class="slider___item slider___item--presents ">
-                  <h1 class='slider__text-wrap'>
-                    <div class="slider__text slider__text--white">Подарки</div>
-                    <div class="slider__text slider__text--yellow">Для любимых</div>
-                  </h1>
-                </li>
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">Детская коллекция</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Мужская коллекция</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Женская коллекция</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Популярные принты</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Новые принты</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Специальные предложения</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Скоро в продаже</a></li>
               </ul>
             </div>
+          </aside>
         </div>
       </section>
       <section class="section main-content">
         <div class="container">
           <div class="tabs">
             <ul class="tabs__list">
-              <li class="tabs__item tabs__item--active">    <!--  in JS on click + tabs__item--active    -->
-                <a href="#" data-filter="popular" class="tabs__link">
+              <li class="tabs__item tabs__item--active" data-filter="popular">    <!--  in JS on click + tabs__item--active    -->
+                <a href="#"  class="tabs__link">
                   Популярное
                 </a>
               </li>
-              <li class="tabs__item">
-                <a href="#" data-filter="new" class="tabs__link">
+              <li class="tabs__item" data-filter="new">
+                <a href="#"  class="tabs__link">
                   Новинки
                 </a>
               </li>
-              <li class="tabs__item">
-                <a href="#" data-filter="bestsellers" class="tabs__link">
+              <li class="tabs__item" data-filter="bestsellers">
+                <a href="#"  class="tabs__link">
                   Бестселлеры
                 </a>
               </li>
-              <li class="tabs__item">
-                <a href="#" data-filter="specials" class="tabs__link">
+              <li class="tabs__item" data-filter="specials">
+                <a href="#"  class="tabs__link">
                   Специальные предложения
                 </a>
               </li>
-              <li class="tabs__item">
-                <a href="#" data-filter="sonnInSale" class="tabs__link">
+              <li class="tabs__item" data-filter="sonnInSale">
+                <a href="#"  class="tabs__link">
                   Скоро в продаже
                 </a>
               </li>
@@ -187,7 +187,7 @@
           </ul>
           <ul class="lookbook__list">
             <li class="lookbook__item lookbook__item--man" style="background: url(./img/bg/pattern.png) center center / 500px;">
-              <a href="#" class="lookbook__link">
+              <a href='./product-view.html' class="lookbook__link">
                 <h3 class="title title--black lookbook__title">Мужская коллекция</h3>
                 <div class="lookbook__desc">
                   <p>Оригинальные, шуточные, полезные 
@@ -197,7 +197,7 @@
               </a>
             </li>
             <li class="lookbook__item lookbook__item--woman" style="background: url(./img/bg/pattern.png) center center / 500px;">
-              <a href='#' class="lookbook__link">
+              <a href='./product-view.html' class="lookbook__link">
                 <h3 class="title title--black lookbook__title">Женская коллекция</h3>
                 <div class="lookbook__desc">
                   <p>Подари своей девушке прикольную футболку с надписями, и ты подаришь 

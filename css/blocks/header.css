@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 29px; }
+  @media screen and (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      margin-left: 13%; } }
 
 .menu {
   position: absolute;
