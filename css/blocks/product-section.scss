@@ -73,7 +73,7 @@
   padding: 0 14px;
 }
 
-.product__desc__list {
+.product-desc__list {
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -82,7 +82,7 @@
   border-bottom: 1px solid #e0d9c8;
 }
 
-.product__desc__item:not(:last-child) {
+.product-desc__item:not(:last-child) {
   margin-bottom: 15px;
 }
 
@@ -95,16 +95,20 @@
   
 }
 
-.product__size__list {
+.product-size__list {
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 7%;
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
-.product__size__item {
+.product-size__item {
   width: 49px;
   height: 49px;
   border: 2px solid #dfd9c7;
@@ -116,7 +120,6 @@
   &:hover {
     cursor: default;
     background-color: inherit;
-    
   }
   &--active{
     color: #1b1b1b;
@@ -125,16 +128,22 @@
       background-color: #ffc92f;
     }
   }
+  @media screen and (max-width: 480px) {
+    margin: 2.2%;
+  }
 }
-.product__size__item:last-child {
+.product-size__item:last-child {
   margin-right: 0;
+  @media screen and (max-width: 480px) {
+    margin: 2.2%;
+  }
 }
 
-.product__size__item--choice{
+.product-size__item--choice{
   background-color: #ffc92f;
 }
 
-.product__color__list {
+.product-color__list {
   display: flex;
   margin-bottom: 37px;
   @media screen and (max-width: 768px) {
@@ -144,7 +153,7 @@
     
 }
 
-.product__color__item {
+.product-color__item {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -172,7 +181,7 @@
     margin-right: 12.5%;
   }
 }
-  .product__color__item::before{
+  .product-color__item::before{
     content: '';
     width: 35px;
     height: 35px;
@@ -185,10 +194,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .product__color__item--active::before {
+  .product-color__item--active::before {
     display: block;
   }
-  .product__color__item:hover::before{
+  .product-color__item:hover::before{
     display: block;
   }
 
@@ -208,7 +217,7 @@
 
 
 
-.product__color__item:last-child {
+.product-color__item:last-child {
   margin-right: 0;
 }
 

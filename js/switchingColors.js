@@ -1,8 +1,8 @@
 $(document).ready ( () => {
 
 
-    const colorBtn = $('.product__color__item');
-    const colorBtnActive = 'product__color__item--active';
+    const colorBtn = $('.product-color__item');
+    const colorBtnActive = 'product-color__item--active';
 
   $(colorBtn).on("click", function() {
     $(colorBtn).removeClass(colorBtnActive);
