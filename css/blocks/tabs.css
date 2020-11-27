@@ -13,8 +13,6 @@
   font-size: 24px;
   text-transform: uppercase; }
 
-.tabs__item:not(:last-child) {
-  margin-right: 27px; }
 .tabs__item--active
 .tabs__link {
   background-color: #1b1b1b;
@@ -24,9 +22,11 @@
   padding: 10px 22px;
   display: inline-block; }
   .tabs__link:hover {
-    color: #d82727; }
+    color: #d82727;
+    transition: color .5s; }
   .tabs__link--active {
     background-color: #1b1b1b;
-    color: #ffc92f; }
+    color: #ffc92f;
+    transition: color .5s; }
 
 /*# sourceMappingURL=tabs.css.map */

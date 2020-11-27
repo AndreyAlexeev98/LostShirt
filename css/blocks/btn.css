@@ -6,5 +6,8 @@
 
 .btn--yellow {
   color: #ffc92f; }
+  .btn--yellow:hover {
+    color: red;
+    transition: color 0.5s; }
 
 /*# sourceMappingURL=btn.css.map */

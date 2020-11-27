@@ -7,4 +7,8 @@
 
 .btn--yellow {
   color: #ffc92f;
+  &:hover {
+    color: red;
+    transition: color 0.5s;
+  }
 }

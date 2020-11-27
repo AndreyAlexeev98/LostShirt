@@ -17,9 +17,6 @@
 }
 
 .tabs__item {
-  &:not(:last-child) {
-    margin-right: 27px;
-  }
   &--active 
   .tabs__link{
     background-color: #1b1b1b;
@@ -34,10 +31,12 @@
   display: inline-block;
   &:hover {
     color: #d82727;
+    transition: color .5s;
   }
   &--active {
     background-color: #1b1b1b;
     color: #ffc92f;
+    transition: color .5s;
   } 
 }
 
